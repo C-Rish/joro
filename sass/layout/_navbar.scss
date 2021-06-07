@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+  
+  &-logo {
+    width: 144px;
+    height: 64px;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &-lists{
+    display: flex;
+
+
+
+    &__links,
+    &__links:visited
+    {
+      text-decoration: none;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: $color-grey;
+      margin-left: 4rem;
+      padding-bottom: 2.25rem;
+
+      &:hover {
+      color: $color-blue;
+      }
+
+      &:not(:last-child){
+        margin-right: 4rem;
+      }
+
+    }
+    
+  }
+
+  & div:last-child {
+    overflow-y: hidden;
+    border-bottom: 1px solid $color-white;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "joro",
+  "version": "1.0.0",
+  "description": "joro project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C-Rish/joro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/C-Rish/joro/issues"
+  },
+  "homepage": "https://github.com/C-Rish/joro#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

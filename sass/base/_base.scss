@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Barlow, Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin-left: 6.2rem;
+  margin-right: 6.2rem;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.header-3{
+  color: $color-grey;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.p-20 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: $color-grey;
+}

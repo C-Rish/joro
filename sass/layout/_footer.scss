@@ -1,0 +1,82 @@
+.footer {
+  background-color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+
+  &-logo {
+    &__socials{
+      img {
+        padding: 2.1rem;
+      }
+    }
+  }
+
+  &-list{
+    a{
+      display: block;
+      font-size: 1.8rem;
+      color: $color-grey;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-contact {
+    h6{
+      font-size: 1.8rem;
+      color: $color-grey;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+
+    div {
+      margin-bottom: 6rem;
+    }
+
+    img{
+      float: left;
+    }
+    p{
+      // display: inline-block;
+      float: right;
+      font-size: 1.8rem;
+      color: $color-grey;
+      font-weight: 300;
+      width: 19rem;
+    }
+  }
+
+  &-form{
+    background-color: $color-blue-light-2;
+    padding: 2rem;
+    margin-top: 5rem;
+
+    p {
+      font-size: 1.8rem;
+      color: $color-grey;
+      font-weight: 600;
+      margin-bottom: 2rem;
+      width: 26.8rem;
+    }
+    
+    div{
+      display: flex;
+      input {
+        background-color: transparent;
+        border: none;
+        height: 4.2rem;
+        width: 26.8rem;
+        font-size: 1.5rem;
+        border-bottom: 1px solid $color-dark-blue;
+        padding: .5rem;
+      }
+      img {
+        background-color: $color-dark-blue;
+        padding: 1rem;
+      }
+    }
+    
+  }
+}

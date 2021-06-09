@@ -2,20 +2,32 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 5rem;
+  height: 12rem;
+  padding-top: 4rem;
+  
+  &:hover {
+    background-color: $color-white;
+    box-shadow: 1px 1px 15px $color-blue;
+
+    & div:last-child {
+      border-bottom: 1px solid $color-blue-light;
+    }
+  }
   
   &-logo {
-    width: 144px;
+    margin-left: 6.2rem;
+    min-width: 144px;
     height: 64px;
+    margin-top: -2rem;
     img {
       height: 100%;
       width: 100%;
     }
   }
-
+  
   &-lists{
     display: flex;
-
+    margin-bottom: 2rem;
 
 
     &__links,
@@ -25,23 +37,18 @@
       font-size: 2rem;
       text-transform: uppercase;
       color: $color-grey;
-      margin-left: 4rem;
-      padding-bottom: 2.25rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
 
       &:hover {
       color: $color-blue;
       }
-
-      &:not(:last-child){
-        margin-right: 4rem;
-      }
-
-    }
-    
+    } 
   }
 
   & div:last-child {
     overflow-y: hidden;
     border-bottom: 1px solid $color-white;
+    margin-right: 6.2rem;
   }
 }

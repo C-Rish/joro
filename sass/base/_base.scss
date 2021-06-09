@@ -22,12 +22,25 @@ li {
 }
 
 .container {
-  margin-left: 6.2rem;
-  margin-right: 6.2rem;
+  // margin-left: 6.2rem;
+  // margin-right: 6.2rem;
+  padding-left: 6.2rem;
+  padding-right: 6.2rem;
+}
+
+.bg-white{
+  background-color: $color-white;
 }
 
 .align-center {
   text-align: center;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mb-6 {
+  margin-bottom: 6rem;
 }
 
 .header-3{
@@ -35,9 +48,24 @@ li {
   font-size: 4rem;
   text-transform: uppercase;
 }
+.header-3-yellow{
+  @extend .header-3;
+  color: $color-yellow;
+}
+
+.header-6 {
+  font-size: 2.5rem;
+  color: $color-grey;
+  font-weight: 500;
+}
 
 .p-20 {
   font-size: 2rem;
   line-height: 2.4rem;
   color: $color-grey;
+  font-weight: 500;
+}
+.p-20-light {
+  @extend .p-20;
+  font-weight: 300;
 }

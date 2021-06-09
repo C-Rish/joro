@@ -5,14 +5,22 @@
   font-size: 2.5rem;
   font-weight: 600;
   padding: 1.2rem 3rem;
-  box-shadow: 4px 4px 0px $home-yellow;
   max-width: 33.4rem;
-
+  box-shadow: 4px 4px 0px $color-yellow;
 } 
 
 .btn-explore:hover {
-  transition: all .75s;
-  color: $color-white;
-  background-color: $color-grey;
+  box-shadow: none;
+  border: 3px solid transparent;
+  transition: all .2s;
+}
 
+.btn-grey {
+  color: $color-grey;
+  border: 3px solid $color-grey;
+  background-color: transparent;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1rem 4rem;
+  max-width: 33.4rem;
 }

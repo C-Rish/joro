@@ -4,14 +4,25 @@
   align-items: center;
   height: 12rem;
   padding-top: 4rem;
-  
+  background-color: transparent;
+  transition: all .5s;
+  z-index: 1000;
+
   &:hover {
     background-color: $color-white;
     box-shadow: 1px 1px 15px $color-blue;
-
+    
     & div:last-child {
       border-bottom: 1px solid $color-blue-light;
     }
+
+
+      .light-logo {
+        display: block;
+      } 
+      .dark-logo{
+        display: none;
+      }
   }
   
   &-logo {
@@ -19,7 +30,13 @@
     min-width: 144px;
     height: 64px;
     margin-top: -2rem;
-    img {
+    .light-logo {
+      display: none;
+      height: 100%;
+      width: 100%;
+    } 
+    .dark-logo{
+      display: block;
       height: 100%;
       width: 100%;
     }
@@ -37,8 +54,8 @@
       font-size: 2rem;
       text-transform: uppercase;
       color: $color-grey;
-      margin-left: 2rem;
-      margin-right: 2rem;
+      margin-left: 3rem;
+      margin-right: 3rem;
 
       &:hover {
       color: $color-blue;

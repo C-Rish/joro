@@ -1,0 +1,54 @@
+.product-body{
+  position: relative;
+}
+.product-main {
+  // background-color: $color-dark-blue;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  // overflow-y: hidden;
+  height: 80vh;
+
+  header {
+    background-color: $color-white;
+    clip-path: polygon(55% 0,100% 0,100% 100%,55% 100%);
+    position: absolute;
+    top: -25rem;
+    height: 115vh;
+    width:98.8vw;
+    max-width: 98.8vw;
+    z-index: -1;
+  }
+  
+  &__info {
+    background-color: $color-white;
+    max-height: 50rem;
+    padding: 3rem 3rem 5rem 5rem;
+    margin-right: -6rem;
+    margin-top: 3rem;
+    z-index: 2;
+
+    p{
+      font-size: 3.5rem;
+      font-weight: 600;
+      color: $color-grey;
+      width: 45rem;
+      margin: 1rem 0rem 6rem 0;
+    }
+  }
+
+  &__img {
+    height: 58.6rem;
+    width: 68.3rem;
+    img{
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .main-shape{
+    position: absolute;
+    bottom: 5rem;
+    right: 0rem;
+  }
+}

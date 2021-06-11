@@ -17,9 +17,6 @@ a {
   display: inline-block;
 }
 
-li {
-  list-style: none;
-}
 
 .container {
   // margin-left: 6.2rem;
@@ -52,7 +49,17 @@ li {
   @extend .header-3;
   color: $color-yellow;
 }
+.header-3-lower{
+  color: $color-grey;
+  font-size: 4rem;
+  font-weight: 600;
+}
 
+.header-5 {
+  font-size: 3rem;
+  color: $color-grey;
+  font-weight: 600;
+}
 .header-6 {
   font-size: 2.5rem;
   color: $color-grey;

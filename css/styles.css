@@ -14,9 +14,6 @@ a {
   text-decoration: none;
   display: inline-block; }
 
-li {
-  list-style: none; }
-
 .container {
   padding-left: 6.2rem;
   padding-right: 6.2rem; }
@@ -40,6 +37,16 @@ li {
 
 .header-3-yellow {
   color: #FFD876; }
+
+.header-3-lower {
+  color: #3B4546;
+  font-size: 4rem;
+  font-weight: 600; }
+
+.header-5 {
+  font-size: 3rem;
+  color: #3B4546;
+  font-weight: 600; }
 
 .header-6 {
   font-size: 2.5rem;
@@ -111,7 +118,8 @@ li {
       width: 100%; }
   .navbar-lists {
     display: flex;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    list-style: none; }
     .navbar-lists__links, .navbar-lists__links:visited {
       text-decoration: none;
       font-size: 2rem;
@@ -521,7 +529,6 @@ body {
     top: -25rem;
     height: 115vh;
     width: 98.8vw;
-    max-width: 98.8vw;
     z-index: -1; }
   .product-main__info {
     background-color: #ffffff;
@@ -546,3 +553,119 @@ body {
     position: absolute;
     bottom: 5rem;
     right: 0rem; }
+
+.product-services {
+  display: flex;
+  justify-content: space-around;
+  padding: 8rem 0 18rem 0;
+  background-color: #ffffff; }
+  .product-services__item {
+    position: relative;
+    z-index: 5; }
+    .product-services__item .service-img {
+      text-align: center;
+      padding: 0 3.5rem; }
+    .product-services__item .service-shape {
+      z-index: -1;
+      position: absolute;
+      top: 2rem;
+      left: 6.5rem; }
+    .product-services__item h5 {
+      text-align: center;
+      margin-top: 4rem;
+      width: 21rem; }
+
+.classroom {
+  display: flex;
+  background-color: #E3F1F0;
+  padding-top: 8rem;
+  position: relative; }
+  .classroom-left {
+    margin-top: 15rem;
+    margin-bottom: -4rem; }
+  .classroom-middle h3 {
+    margin-left: -28rem;
+    padding: 0 10rem;
+    margin-bottom: 5rem; }
+  .classroom-middle p {
+    padding: 0rem 3rem 3rem 3rem;
+    text-align: left; }
+  .classroom-right {
+    margin-top: -22rem;
+    margin-right: 6rem;
+    z-index: 2; }
+  .classroom-shape {
+    position: absolute;
+    top: 15rem;
+    right: 0;
+    z-index: 1; }
+
+.products-section {
+  background-color: #89BBE0;
+  padding: 20rem 0 8rem 0;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  overflow: hidden; }
+  .products-section .product-shape {
+    position: absolute;
+    right: -18rem;
+    top: 5rem;
+    background-color: #FFD876;
+    height: 38rem;
+    width: 38rem;
+    border-radius: 50%;
+    z-index: 0; }
+  .products-section__item {
+    border-radius: 10px;
+    padding-bottom: 2rem;
+    background-color: transparent; }
+    .products-section__item-img {
+      background-color: #ffffff;
+      box-shadow: 3px 3px 20px #00000029;
+      border-radius: 10px 10px 0px 0px;
+      width: 47rem;
+      height: 26.4rem;
+      position: relative;
+      z-index: 2; }
+      .products-section__item-img img {
+        transition: all .5s;
+        position: absolute;
+        top: 3rem;
+        left: 13rem;
+        z-index: 6; }
+      .products-section__item-img .item-shape {
+        position: absolute;
+        top: 6rem;
+        left: 3.5rem;
+        z-index: 0; }
+    .products-section__item-desc h5 {
+      margin-top: 4rem; }
+    .products-section__item-desc ul {
+      padding: 1rem 0 2rem 2rem; }
+      .products-section__item-desc ul li {
+        padding: 1rem 0; }
+    .products-section__item-desc i {
+      padding-left: 1rem;
+      font-weight: 400; }
+    .products-section__item:hover {
+      background-color: #ffffff; }
+      .products-section__item:hover div:first-child {
+        background-color: #BFE9E7; }
+        .products-section__item:hover div:first-child img:first-child {
+          transform: scale(1.1); }
+      .products-section__item:hover h5 {
+        transition: all .5s;
+        margin-left: 2rem; }
+      .products-section__item:hover ul {
+        transition: all .5s;
+        margin-left: 2rem; }
+      .products-section__item:hover a {
+        text-align: center;
+        margin: 0 2.5rem;
+        min-width: 42rem; }
+      .products-section__item:hover a:hover {
+        background-color: #FFD876;
+        border: 3px solid transparent; }
+        .products-section__item:hover a:hover i {
+          margin-left: 1rem; }

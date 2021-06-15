@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: $color-grey;
+
 }
 
 html {
@@ -33,6 +35,9 @@ a {
   text-align: center;
 }
 
+.mt-2 {
+  margin-top: 2rem;
+}
 .mb-2 {
   margin-bottom: 2rem;
 }
@@ -75,4 +80,8 @@ a {
 .p-20-light {
   @extend .p-20;
   font-weight: 300;
+}
+
+.d-block {
+  display: block;
 }

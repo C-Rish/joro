@@ -1,0 +1,61 @@
+.reachtec-card {
+  display: flex;
+  justify-content: space-around;
+  background-color: $color-blue-light;
+  padding: 25rem 0 40rem 0;
+  position: relative;
+  overflow: hidden;
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 10;
+    max-width: 33rem;
+
+    // .img-section {
+    //   max-width: 33rem;
+    //   img {
+    //     width: 120%;
+    //   }
+    // }
+
+    .info-section {
+      height: 38rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      // padding: 0rem 3rem;
+      text-align: left;
+    }
+  }
+
+  .reachtec-shape {
+    position: absolute;
+    top: 10rem;
+    left: -15rem;
+    height: 38rem;
+    width: 38rem;
+    border-radius: 50%;
+    background-color: $color-yellow;
+  }
+}
+
+// VIDEOS
+.reachtec-videos {
+  background-color: $color-dark-blue;
+  padding-bottom: 5rem;
+  z-index: 100;
+  position: relative;
+  .main-video {
+    img {
+      margin-top: -25rem;
+    }
+  }
+  .sub-videos {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+    gap: 1rem;
+  }
+}

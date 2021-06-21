@@ -7,14 +7,14 @@
   display: flex;
   justify-content: center;
   // overflow-y: hidden;
-  height: 80vh;
+  height: 75vh;
 
   header {
     background-color: $color-white;
     clip-path: polygon(55% 0, 100% 0, 100% 100%, 55% 100%);
     position: absolute;
-    top: -30rem;
-    height: 115vh;
+    top: -12em;
+    height: 120vh;
     width: 98.8vw;
     // max-width: 100vw;
     z-index: -1;
@@ -59,6 +59,7 @@
   justify-content: space-around;
   padding: 8rem 0 18rem 0;
   background-color: $color-white;
+  margin-top: 12rem;
 
   &__item {
     position: relative;

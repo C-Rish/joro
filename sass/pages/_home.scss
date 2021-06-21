@@ -1,12 +1,11 @@
-body{
+body {
   // background-color: red;
   background-color: $color-blue-light;
-
 }
 .main-tag {
   min-height: 90rem;
 
-  h3{
+  h3 {
     margin-top: 18rem;
   }
 }
@@ -17,12 +16,12 @@ body{
   height: 6.8rem;
   background-color: $color-yellow;
   border-radius: 100px;
-  position: fixed; 
+  position: fixed;
   bottom: 10rem;
   right: 10rem;
   z-index: 1000;
-  transition: all .4s;
-  p{
+  transition: all 0.4s;
+  p {
     display: none;
     font-size: 2rem;
     text-transform: uppercase;
@@ -30,25 +29,22 @@ body{
     font-weight: 700;
     padding: 2.2rem;
     position: fixed;
-    bottom: 10rem; 
+    bottom: 10rem;
     right: 15rem;
     width: 20rem;
-
-    
   }
   img {
     position: relative;
-    top: 1.3rem; 
+    top: 1.3rem;
     left: -1.5rem;
     float: right;
   }
-  
+
   &:hover {
     width: 25rem;
-    p{
+    p {
       display: inline-block;
     }
-
   }
 }
 
@@ -58,11 +54,10 @@ body{
   margin: 8rem 2rem;
   background-color: $color-blue-light;
 
-
   &__img {
-    position: relative;   
-    .class-img{
-      position: relative;   
+    position: relative;
+    .class-img {
+      position: relative;
       width: 43.5rem;
       height: 43.5rem;
       border-radius: 800px;
@@ -73,25 +68,23 @@ body{
         z-index: 6;
         transition: all 1s;
       }
-      .shape_img{
+      .shape_img {
         position: absolute;
         top: 34rem;
         left: 0rem;
         z-index: 7;
       }
-      
+
       &:hover {
         img {
-          transform:translateX(2rem) translateY(-1rem); 
+          transform: translateX(2rem) translateY(-1rem);
         }
-        
-        .shape_img{
-           transform: translateX(-2rem) translateY(1rem); 
-         }
 
+        .shape_img {
+          transform: translateX(-2rem) translateY(1rem);
+        }
       }
     }
-
 
     .yellow-circle {
       width: 43.5rem;
@@ -105,7 +98,7 @@ body{
     .grey-circle {
       width: 43.5rem;
       height: 43.5rem;
-      background-color: #ABD3D1;
+      background-color: #abd3d1;
       border-radius: 800px;
       position: absolute;
       top: 3rem;
@@ -125,7 +118,7 @@ body{
       font-weight: 700;
       width: 56.5rem;
     }
-    h4{
+    h4 {
       font-size: 4rem;
       color: $color-grey;
       font-weight: 600;
@@ -136,12 +129,10 @@ body{
 
 // OUR PRODUCTS SECTION
 
-
 .our-products {
   display: flex;
   justify-content: space-between;
   margin-top: -20rem;
-
 
   &__card {
     display: flex;
@@ -153,23 +144,22 @@ body{
     width: 33.5rem;
     box-shadow: 0px 0px 5px $color-blue;
     margin-bottom: 8rem;
-    
+
     &-top {
       position: relative;
-      background-color: #EEF6F6;
-      width: 99%; // Border was not taking effect in hover so 99% 
+      background-color: #eef6f6;
+      width: 99%; // Border was not taking effect in hover so 99%
       height: 21.5rem;
       text-align: center;
       padding: 2rem;
 
-      
       .product-img {
         position: absolute;
         z-index: 13;
         left: 6.6rem;
-        transition: all .5s;
+        transition: all 0.5s;
       }
-      
+
       & img:last-child {
         position: absolute;
         z-index: 10;
@@ -187,26 +177,25 @@ body{
       color: $color-grey;
       font-weight: 600;
       border-bottom: 2px solid $color-grey;
-      
-      i{
-        transition: all .5s;
-      }
 
+      i {
+        transition: all 0.5s;
+      }
     }
 
-    &:hover { // CARD HOVER
+    &:hover {
+      // CARD HOVER
       border: solid 1px $color-grey;
       .product-img {
         transform: scale(1.1);
       }
 
-      i{
+      i {
         transform: translateX(1rem);
       }
     }
   }
 }
-
 
 // OUR PURPOSE SECTION
 .our-purpose {
@@ -233,11 +222,11 @@ body{
     flex-shrink: 1;
     position: relative;
 
-    &-section{
+    &-section {
       margin: 9.5rem auto 0 5.6rem;
       div {
         display: flex;
-        p{
+        p {
           width: 59rem;
           margin-bottom: 5rem;
         }
@@ -246,7 +235,7 @@ body{
     .star-icon {
       height: 5.7rem;
       width: 5.7rem;
-      background-color:$color-green ;
+      background-color: $color-green;
       border-radius: 50%;
       font-size: 3rem;
       color: $color-white;
@@ -262,8 +251,6 @@ body{
       right: 15rem;
     }
   }
-
-  
 } // OUR PURPOSE END
 
 // FEATURES SECTION
@@ -279,9 +266,9 @@ body{
       font-size: 3.7rem;
       color: $color-grey;
       text-transform: uppercase;
-      margin-bottom: .2rem;
+      margin-bottom: 0.2rem;
     }
-    & > p{
+    & > p {
       font-size: 2.9rem;
       color: $color-white;
       width: 49.2rem;
@@ -291,14 +278,14 @@ body{
     &__point {
       position: relative;
       margin-bottom: 3.2rem;
-      h6{
-        margin-bottom: .4rem;
+      h6 {
+        margin-bottom: 0.4rem;
       }
       span {
         position: absolute;
         top: -1rem;
         left: -1rem;
-        z-index: -1;  
+        z-index: -1;
         display: inline-block;
         height: 2.4rem;
         width: 2.4rem;
@@ -318,7 +305,7 @@ body{
       &__main {
         margin-top: 15rem;
       }
-      
+
       &__shape {
         position: absolute;
         top: 10rem;
@@ -329,8 +316,8 @@ body{
         bottom: -5rem;
         right: -12rem;
       }
-      
-      &:hover {     
+
+      &:hover {
         &__shape {
           display: none;
         }
@@ -343,7 +330,6 @@ body{
     }
   }
 }
-
 
 // TESTIMONAILS SECTION
 .testimonials {
@@ -359,12 +345,12 @@ body{
     margin-bottom: 5rem;
   }
 
-  &-quotes{
-    display: flex;  
+  &-quotes {
+    display: flex;
     justify-content: space-around;
     text-align: center;
 
-    .main-text{
+    .main-text {
       font-style: italic;
       margin: 2.1rem 0;
       height: 24rem;
@@ -374,8 +360,8 @@ body{
       background-color: $color-green-light;
       max-width: 48rem;
       padding: 2.8rem;
-      border-radius: 10px ;
-      box-shadow: 10px 10px 0px #0000000D;
+      border-radius: 10px;
+      box-shadow: 10px 10px 0px #0000000d;
 
       img {
         width: 3.4rem;
@@ -388,11 +374,10 @@ body{
         font-weight: 600;
       }
 
-      .job-desc{
+      .job-desc {
         font-size: 2rem;
         font-weight: 400;
         color: $color-green;
-
       }
     }
   }
@@ -408,7 +393,7 @@ body{
     position: relative;
     height: 40.4rem;
     width: 31.3rem;
-    border-radius: 157px 157px 0px 0px; 
+    border-radius: 157px 157px 0px 0px;
     margin-top: -5rem;
 
     img {
@@ -421,8 +406,8 @@ body{
       z-index: 10;
       height: 40.4rem;
       width: 31.3rem;
-      border-radius: 157px 157px 0px 0px; 
-      background-color:$color-green;
+      border-radius: 157px 157px 0px 0px;
+      background-color: $color-green;
       top: 1.5rem;
       left: -1.5rem;
     }
@@ -437,8 +422,7 @@ body{
       text-align: center;
     }
     h3 {
-      margin: .4rem 0 5.5rem 0;
-
+      margin: 0.4rem 0 5.5rem 0;
     }
 
     input,
@@ -457,7 +441,7 @@ body{
       text-transform: uppercase;
       font-weight: 600;
       background-color: $color-yellow;
-      padding: .8rem 4rem;
+      padding: 0.8rem 4rem;
       color: $color-grey;
     }
   }

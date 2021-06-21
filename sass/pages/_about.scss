@@ -1,0 +1,103 @@
+.about-main-shape {
+  height: 50rem;
+  width: 41rem;
+  position: absolute; // Parent element in relative in product.scss file
+
+  top: 1rem;
+  left: 1rem;
+  z-index: -1;
+  border-radius: 300px 300px 0px 0px;
+  background-color: $color-yellow;
+}
+
+.about-main-dotcirle {
+  position: absolute;
+  right: 10rem;
+  top: 0;
+  z-index: -1;
+}
+
+.mission {
+  background: $color-white;
+  padding: 5rem;
+  p {
+    padding: 0 15rem;
+    font-weight: 100;
+  }
+}
+
+// OUR STORY SECTION
+.our-story {
+  display: flex;
+  gap: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: $color-blue-light;
+  &__img {
+    position: relative;
+    top: 0;
+
+    p {
+      position: absolute;
+      top: 40%;
+      left: 45%;
+      font-size: 2.5rem;
+      color: $color-white;
+      text-align: center;
+    }
+    h3 {
+      position: absolute;
+      top: 50%;
+      left: 30%;
+    }
+  }
+
+  &__text {
+    position: relative;
+    .our-story__shape {
+      position: absolute;
+      top: 4rem;
+      left: -2rem;
+      width: 5.7rem;
+      height: 5.7rem;
+      background-color: $color-yellow;
+      border-radius: 50%;
+    }
+    p {
+      padding: 6rem 12rem 0 0;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+// DIFFERENT SECTION
+.different-bg {
+  background-color: $color-blue-light-2;
+  padding: 2rem 0;
+  .different {
+    display: flex;
+    gap: 5rem;
+
+    &-left {
+      margin-top: 25rem;
+      &__card {
+        text-align: right;
+        p {
+          padding: 0 0rem 0 5rem;
+        }
+      }
+    }
+    &-right {
+      &__card {
+        text-align: left;
+        p {
+          padding: 0 5rem 0 0;
+        }
+      }
+    }
+  }
+  a {
+    margin: 0 auto;
+  }
+} // DIFF BG END

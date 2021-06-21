@@ -1,0 +1,33 @@
+.news-dotcircle {
+  position: absolute;
+  right: -10rem;
+  top: 0rem;
+  z-index: -1;
+}
+
+.news-section {
+  background-color: $color-white;
+  padding-top: 5rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-areas:
+    "small1 large large"
+    "small2 large large"
+    "medium medium small3";
+
+  div {
+    background-color: $color-blue-light-2;
+  }
+
+  &__small {
+    width: 39rem;
+  }
+  &__large {
+    // grid-column: 2/4;
+    grid-area: large;
+  }
+
+  &__medium {
+    grid-area: medium;
+  }
+}

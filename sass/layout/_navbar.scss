@@ -5,26 +5,26 @@
   height: 12rem;
   padding-top: 4rem;
   background-color: transparent;
-  transition: all .5s;
+  transition: all 0.5s;
   z-index: 1000;
+  width: 100vw;
 
   &:hover {
     background-color: $color-white;
     box-shadow: 1px 1px 15px $color-blue;
-    
+
     & div:last-child {
       border-bottom: 1px solid $color-blue-light;
     }
 
-
-      .light-logo {
-        display: block;
-      } 
-      .dark-logo{
-        display: none;
-      }
+    .light-logo {
+      display: block;
+    }
+    .dark-logo {
+      display: none;
+    }
   }
-  
+
   &-logo {
     margin-left: 6.2rem;
     min-width: 144px;
@@ -34,23 +34,21 @@
       display: none;
       height: 100%;
       width: 100%;
-    } 
-    .dark-logo{
+    }
+    .dark-logo {
       display: block;
       height: 100%;
       width: 100%;
     }
   }
-  
-  &-lists{
+
+  &-lists {
     display: flex;
     margin-bottom: 2rem;
     list-style: none;
 
-
     &__links,
-    &__links:visited
-    {
+    &__links:visited {
       text-decoration: none;
       font-size: 2rem;
       text-transform: uppercase;
@@ -59,14 +57,31 @@
       margin-right: 3rem;
 
       &:hover {
-      color: $color-blue;
+        color: $color-blue;
       }
-    } 
+    }
   }
 
   & div:last-child {
     overflow-y: hidden;
     border-bottom: 1px solid $color-white;
     margin-right: 6.2rem;
+  }
+}
+
+.navbar-lists li:hover .news-div {
+  display: block;
+}
+
+.news-div {
+  display: none;
+  background-color: $color-white;
+  padding: 1rem;
+  position: absolute;
+  right: 23rem;
+  top: 10rem;
+  list-style: none;
+  a {
+    margin: 0.5rem 0;
   }
 }

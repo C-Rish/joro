@@ -1,0 +1,53 @@
+.product-main_support {
+  overflow: hidden;
+  margin-top: 3rem;
+  .support-img {
+    width: 100%;
+  }
+}
+
+.support-article {
+  background-color: $color-green-light;
+  padding: 8rem 6rem;
+  position: relative;
+  z-index: 1000;
+  margin: -25rem auto 0 auto;
+  width: 90%;
+
+  h2 {
+    font-size: 4.4rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  &__links {
+    text-align: right;
+    a {
+      font-size: 2rem;
+      text-decoration: underline;
+      color: $color-dark-blue;
+      padding-left: 2rem;
+    }
+  }
+}
+
+.other-news {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  position: relative;
+  z-index: 100;
+
+  &__header {
+    padding: 5rem 0 2rem 0;
+  }
+}
+
+.support-div {
+  background-color: $color-dark-blue;
+  height: 30rem;
+  margin-top: -20rem;
+}

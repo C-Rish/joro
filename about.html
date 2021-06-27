@@ -27,24 +27,34 @@
   </head>
   <body class="product-body" style="background-color: #89BBE0">
   
-      <!-- NAVBAR SECTION -->
-        <div class="navbar">
-          <a class="navbar-logo" href="index.html">
-            <img class="light-logo" src="img/home/JORO-LOGO-FINAL-Colored.png" alt="">
-            <img class="dark-logo" src="img/home/JORO-LOGO-FINAL-Gray.png" alt="">
-        </a>
-        <div>
-          <ul class="navbar-lists">
-            <li><a class="navbar-lists__links" href="about.html">About Us</a></li>
-            <li><a class="navbar-lists__links" href="product.html">Our Products</a></li>
-            <li><a class="navbar-lists__links" href="spport.html">Support</a></li>
+    <!-- NAVBAR SECTION -->
+    <div class="navbar">
+      <a class="navbar-logo" href="index.html">
+          <img class="light-logo" src="img/home/JORO-LOGO-FINAL-Colored.png" alt="">
+          <img class="dark-logo" src="img/home/JORO-LOGO-FINAL-Gray.png" alt="">
+      </a>
+      <div class="navbar-links">
+
+        <ul class="navbar-lists">
+          <li><a class="navbar-lists__links" href="about.html">About Us</a></li>
+          <li><a class="navbar-lists__links" href="product.html">Our Products</a></li>
+          <li><a class="navbar-lists__links" href="spport.html">Support</a></li>
+          <li class="news"><a class="navbar-lists__links" href="news.html">News</a>
+            <ul>
+              <li><a class="navbar-lists__links" href="spport.html">Support</a></li>
             <li><a class="navbar-lists__links" href="news.html">News</a></li>
-            <li><a class="navbar-lists__links" href="contact.html">Contact Us</a></li>
           </ul>
-        </div>
-      </div>
+        </li>
+        <li><a class="navbar-lists__links" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    </div>
+    
+    <a class="toggle-button">
+      <i class="fas fa-bars bar"></i>
+    </a>
   
-      <main class="product-main">
+      <main class="product-main container">
         <header style="background-color: #bfe9e7;">
           <!--<img src="img/product/IntimateSetting copy.png" alt=""> -->
         </header>
@@ -53,10 +63,12 @@
           <p>Crafting high-quality products that make your life easier</p>
         </div>
         <div class="product-main__image">
-          <img src="img/about/about-main.png" alt="">
-          <div class="about-main-shape">
-            <!-- Css for this line is in _product.scss -->
-          </div> 
+          <div class="main-img-div">
+            <img src="img/about/about-main.png" alt="">
+            <div class="about-main-shape">
+              <!-- Css for this line is in _product.scss -->
+            </div> 
+          </div>
         </div>
         <div class="about-main-dotcirle">
           <img src="img/about/mask-group9.svg" alt="">
@@ -71,7 +83,9 @@
 
       <div class="our-story container">
         <div class="our-story__img">
-          <img src="img/about/mask-group13.png" alt="">
+          <div class="outstory-main">
+            <img src="img/about/mask-group13.png" alt="">
+          </div>
           <p>History</p>
           <h3 class="header-3-yellow">Our STORY</h3>
         </div>
@@ -79,7 +93,6 @@
           <span class="our-story__shape"></span>
           <p class="p-20-light">
             Our family comes from a long line of builders, creators, designers, and innovators. We founded Joro and FlexDesk in 1996 to create custom, thoughtful workplace solutions that weren’t being built by anyone else. Since that time, we’ve brought our passion for design and flexibility to the classroom and boardroom with ProLIFT mounts, and to the home and workplace with ReachTec mobility products. Our products are proudly designed and manufactured in North America by a tight-knit team who are a part of our family and community.
-
           </p>
         </div>
       </div>  <!-- OUR STORY END -->
@@ -131,7 +144,7 @@
         <a href="prolift.html" class="footer-list__anchor">ProLIFT</a>
         <a href="flexdesk.html" class="footer-list__anchor">FlexDesk</a>
         <a href="reachtec.html" class="footer-list__anchor">ReachTec</a>
-        <a href="#" class="footer-list__anchor">FAQ</a>
+        <a href="faq.html" class="footer-list__anchor">FAQ</a>
         <a href="#" class="footer-list__anchor">Blog</a>
       </div>
     
@@ -170,5 +183,8 @@
       </div>
   </body>
   </html>
+
+<script src="toggle.js"></script>
+
 </body>
 </html>

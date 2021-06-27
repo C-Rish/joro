@@ -6,8 +6,23 @@
   position: relative;
   display: flex;
   justify-content: center;
-  // overflow-y: hidden;
-  height: 75vh;
+  height: 65vh;
+  padding-top: 3rem;
+
+  // BELOW MEDIA QUERY LINKED WITH .support-artivle class in support.scss
+
+  @media (max-width: 850px) {
+    padding-top: 0rem;
+  }
+  @media (max-width: 730px) {
+    height: 35vh;
+  }
+  @media (max-width: 600px) {
+    height: 25vh;
+  }
+  @media (max-width: 555px) {
+    height: 15vh;
+  }
 
   header {
     background-color: $color-white;
@@ -23,26 +38,32 @@
   &__info {
     background-color: $color-white;
     max-height: 50rem;
-    padding: 3rem 3rem 5rem 5rem;
-    margin-right: -6rem;
-    margin-top: 3rem;
-    z-index: 2;
+    height: 50rem;
+    padding: 3rem 3rem 2rem 5rem;
+    margin-right: -4rem;
+    margin-top: 5rem;
+    z-index: 11;
 
     p {
+      width: 40rem;
       font-size: 3.5rem;
       font-weight: 600;
       color: $color-grey;
-      width: 45rem;
-      margin: 1rem 0rem 6rem 0;
+      margin: 1rem 0rem 4rem 0;
     }
   }
 
   &__img {
-    height: 58.6rem;
-    width: 68.3rem;
+    z-index: 10;
     img {
       height: 100%;
       width: 100%;
+    }
+    @media (max-width: 1100px) {
+      img {
+        height: 80%;
+        // width: 80%;
+      }
     }
   }
 
@@ -60,6 +81,11 @@
   padding: 8rem 0 18rem 0;
   background-color: $color-white;
   margin-top: 12rem;
+  gap: 2rem;
+  @media (max-width: 650px) {
+    flex-direction: column;
+    align-items: center;
+  }
 
   &__item {
     position: relative;
@@ -93,6 +119,8 @@
     margin-top: 15rem;
     margin-bottom: -10rem;
     z-index: 1;
+    height: 100%;
+    width: 100%;
   }
   &-middle {
     h3 {
@@ -123,9 +151,15 @@
   background-color: $color-dark-blue;
   padding: 20rem 0 8rem 0;
   display: flex;
+  gap: 2rem;
   justify-content: space-around;
   position: relative;
   overflow: hidden;
+
+  @media (max-width: 970px) {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .product-shape {
     position: absolute;
@@ -235,16 +269,23 @@
     grid-template-rows: 1fr 1fr;
     grid-gap: 2rem 2rem;
 
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+
     &-heading {
       background-color: $color-green;
       height: 36rem;
       border-radius: 0px 1000px 1000px 0px;
       position: relative;
       margin-left: -6rem;
+      max-width: 100%;
+      width: 100%;
       h3 {
         text-align: center;
-        width: 35rem;
-        margin: 12.5rem 0 0 28rem;
+        width: 30rem;
+        margin: 12.5rem 0 0 3rem;
       }
       &-shape {
         height: 36rem;
@@ -263,10 +304,12 @@
       height: 36rem;
       border-radius: 1000px 0px 0px 1000px;
       position: relative;
-      margin-right: -6rem;
+      // margin-right: -6rem;
+      max-width: 100%;
+      width: 100%;
       h3 {
         text-align: center;
-        width: 35rem;
+        // width: 35rem;
         margin: 12.5rem 0 0 28rem;
       }
       &-shape {
@@ -326,6 +369,12 @@
   grid-template-rows: repeat(1, 1fr);
   margin-top: 10rem;
   grid-gap: 3rem;
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &-heading {
     grid-column: 1 / 4;
     background-color: $color-green;
@@ -409,6 +458,7 @@
       font-weight: 600;
       border-radius: 100px 100px 100px 100px;
       margin-right: 4rem;
+      margin-bottom: 1rem;
 
       &:hover {
         background-color: $color-dark-blue;

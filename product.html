@@ -14,23 +14,33 @@
 <body class="product-body" style="background-color: #89BBE0">
 
     <!-- NAVBAR SECTION -->
-      <div class="navbar">
-        <a class="navbar-logo" href="index.html">
+    <div class="navbar">
+      <a class="navbar-logo" href="index.html">
           <img class="light-logo" src="img/home/JORO-LOGO-FINAL-Colored.png" alt="">
           <img class="dark-logo" src="img/home/JORO-LOGO-FINAL-Gray.png" alt="">
       </a>
-      <div>
+      <div class="navbar-links">
+
         <ul class="navbar-lists">
           <li><a class="navbar-lists__links" href="about.html">About Us</a></li>
           <li><a class="navbar-lists__links" href="product.html">Our Products</a></li>
           <li><a class="navbar-lists__links" href="spport.html">Support</a></li>
-          <li><a class="navbar-lists__links" href="news.html">News</a></li>
-          <li><a class="navbar-lists__links" href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
+          <li class="news"><a class="navbar-lists__links" href="news.html">News</a>
+            <ul>
+              <li><a class="navbar-lists__links" href="spport.html">Support</a></li>
+            <li><a class="navbar-lists__links" href="news.html">News</a></li>
+          </ul>
+        </li>
+        <li><a class="navbar-lists__links" href="contact.html">Contact Us</a></li>
+      </ul>
     </div>
+    </div>
+    
+    <a class="toggle-button">
+      <i class="fas fa-bars bar"></i>
+    </a>
 
-    <main class="product-main">
+    <main class="product-main container">
       <header style="background-color: #88E2A6;">
         <!--<img src="img/product/IntimateSetting copy.png" alt=""> -->
       </header>
@@ -45,7 +55,7 @@
 
     </main>
 
-    <!-- THIS SECTION IS SAME IN PRODUCT1 and 2 -->
+    <!-- THIS SECTION IS SAME IN prolift.scss and many other pages -->
     <div class="product-services container">
       <div class="product-services__item">
         <img class="service-img" src="img/product-2/north-america.svg" alt="">
@@ -117,7 +127,7 @@
         <div class="display-text">
           <h6>Adjustable sit/stand desks that have been designed to suit any and all workspaces</h6>
           <div class="display-text__div">
-            <p>Can be added to new and existing cabinets and shelves </p>
+            <p>Can be added to new and existing cabinets <br> and shelves </p>
             <span></span>
           </div>
           <div class="display-text__div">
@@ -176,6 +186,8 @@
       </div>
     </div>
 
+    
+    <!-- FORM SECTION -->
     <div class="contact-form">
       <h3 class="header-3 align-center mb-2">Get in touch with us today!</h3>
       <div class="contact-form__section">
@@ -278,5 +290,7 @@
       <p>Chat with Joro</p>
       <img src="img/home/Icon ionic-ios-chatbubbles.svg" alt="">
     </div>
+<script src="toggle.js"></script>
+
 </body>
 </html>

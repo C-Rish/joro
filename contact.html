@@ -28,29 +28,39 @@
   <body class="product-body" style="background-color: #89BBE0">
   
       <!-- NAVBAR SECTION -->
-        <div class="navbar">
-          <a class="navbar-logo" href="index.html">
+      <div class="navbar">
+        <a class="navbar-logo" href="index.html">
             <img class="light-logo" src="img/home/JORO-LOGO-FINAL-Colored.png" alt="">
             <img class="dark-logo" src="img/home/JORO-LOGO-FINAL-Gray.png" alt="">
         </a>
-        <div>
+        <div class="navbar-links">
+
           <ul class="navbar-lists">
             <li><a class="navbar-lists__links" href="about.html">About Us</a></li>
             <li><a class="navbar-lists__links" href="product.html">Our Products</a></li>
             <li><a class="navbar-lists__links" href="spport.html">Support</a></li>
-            <li><a class="navbar-lists__links" href="news.html">News</a></li>
-            <li><a class="navbar-lists__links" href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
+            <li class="news"><a class="navbar-lists__links" href="news.html">News</a>
+              <ul>
+                <li><a class="navbar-lists__links" href="spport.html">Support</a></li>
+              <li><a class="navbar-lists__links" href="news.html">News</a></li>
+            </ul>
+          </li>
+          <li><a class="navbar-lists__links" href="contact.html">Contact Us</a></li>
+        </ul>
       </div>
+      </div>
+      
+      <a class="toggle-button">
+        <i class="fas fa-bars bar"></i>
+      </a>
   
-      <main class="product-main">
+      <main class="product-main container">
         <header style="background-color: #88e2a6;">
           <!--<img src="img/product/IntimateSetting copy.png" alt=""> -->
         </header>
         <div class="product-main__header">
           <h2>Contact Us</h2>
-          <p class="mb-3">Want to learn more about our products? Or would you like a quote for your home, school or business? </p>
+          <p>Want to learn more about our products? Or would you like a quote for your home, school or business? </p>
           <p>
             Our team would love to hear from you.
           </p>
@@ -147,7 +157,6 @@
       <!-- END OF FROM SECTION -->
 
       <div class="map">
-        
         <div class="mapouter">
           <div class="gmap_canvas">
               <iframe width="100%" height="700" id="gmap_canvas" src="https://maps.google.com/maps?q=winnipeg&t=&z=5&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
@@ -232,6 +241,9 @@
         <p>Chat with Joro</p>
         <img src="img/home/Icon ionic-ios-chatbubbles.svg" alt="">
       </div>
+
+<script src="toggle.js"></script>
+
   </body>
   </html>
 </body>

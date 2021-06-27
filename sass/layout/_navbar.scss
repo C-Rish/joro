@@ -6,8 +6,10 @@
   padding-top: 4rem;
   background-color: transparent;
   transition: all 0.5s;
-  z-index: 1000;
-  width: 100vw;
+  z-index: 100;
+  a {
+    display: block;
+  }
 
   &:hover {
     background-color: $color-white;
@@ -30,6 +32,12 @@
     min-width: 144px;
     height: 64px;
     margin-top: -2rem;
+    z-index: 100;
+
+    @media (max-width: 900px) {
+      margin-left: 2rem;
+    }
+
     .light-logo {
       display: none;
       height: 100%;
@@ -46,6 +54,7 @@
     display: flex;
     margin-bottom: 2rem;
     list-style: none;
+    position: relative;
 
     &__links,
     &__links:visited {
@@ -55,33 +64,121 @@
       color: $color-grey;
       margin-left: 3rem;
       margin-right: 3rem;
+      display: inline-block;
+
+      @media (max-width: 1050px) {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+      }
+      @media (max-width: 900px) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
 
       &:hover {
         color: $color-blue;
       }
+
+      a {
+        display: block;
+      }
     }
-  }
+
+    ul {
+      position: absolute;
+      background-color: $color-white;
+      display: none;
+      // top: 3rem;
+
+      li {
+        list-style: none;
+        padding: 0.5rem 0;
+        background-color: inherit;
+      }
+    }
+
+    .news:hover ul,
+    .news:hover {
+      position: relative;
+      height: 8rem;
+      display: block;
+    }
+  } // End of navbar-lists
 
   & div:last-child {
     overflow-y: hidden;
     border-bottom: 1px solid $color-white;
     margin-right: 6.2rem;
   }
+
+  @media (max-width: 550px) {
+    margin-bottom: 6rem;
+  }
 }
 
-.navbar-lists li:hover .news-div {
-  display: block;
-}
-
-.news-div {
+.toggle-button {
   display: none;
-  background-color: $color-white;
-  padding: 1rem;
   position: absolute;
-  right: 23rem;
-  top: 10rem;
-  list-style: none;
-  a {
-    margin: 0.5rem 0;
+  top: 4rem;
+  right: 4rem;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .bar {
+    height: 5px;
+    width: 100%;
+    font-size: 3rem;
+  }
+  @media (max-width: 750px) {
+    display: block;
+  }
+}
+
+@media (max-width: 805px) {
+  .navbar-lists {
+    position: absolute;
+    top: 10rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+    width: 100%;
+    text-align: right;
+  }
+
+  .logo {
+    align-items: center;
+  }
+
+  .toggle-button {
+    display: flex;
+    font-size: 3rem;
+    top: 4rem;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+    z-index: 1000;
+  }
+
+  .navbar.active {
+    background-color: $color-white;
   }
 }

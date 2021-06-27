@@ -14,20 +14,26 @@
 <body class="product-body" style="background-color: #89BBE0">
 
     <!-- NAVBAR SECTION -->
-      <div class="navbar">
-        <a class="navbar-logo" href="index.html">
+    <div class="navbar">
+      <a class="navbar-logo" href="index.html">
           <img class="light-logo" src="img/home/JORO-LOGO-FINAL-Colored.png" alt="">
           <img class="dark-logo" src="img/home/JORO-LOGO-FINAL-Gray.png" alt="">
       </a>
-      <div>
+      <div class="navbar-links">
+
         <ul class="navbar-lists">
           <li><a class="navbar-lists__links" href="about.html">About Us</a></li>
           <li><a class="navbar-lists__links" href="product.html">Our Products</a></li>
           <li><a class="navbar-lists__links" href="spport.html">Support</a></li>
-          <li><a class="navbar-lists__links" href="news.html">News</a></li>
-          <li><a class="navbar-lists__links" href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
+          <li class="news"><a class="navbar-lists__links" href="news.html">News</a>
+            <ul>
+              <li><a class="navbar-lists__links" href="spport.html">Support</a></li>
+            <li><a class="navbar-lists__links" href="news.html">News</a></li>
+          </ul>
+        </li>
+        <li><a class="navbar-lists__links" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
     </div>
 
     <main class="product-main " >
@@ -200,5 +206,8 @@
       <p>Chat with Joro</p>
       <img src="img/home/Icon ionic-ios-chatbubbles.svg" alt="">
     </div>
+
+<script src="toggle.js"></script>
+
 </body>
 </html>

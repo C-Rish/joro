@@ -19,33 +19,40 @@
             <img class="light-logo" src="img/home/JORO-LOGO-FINAL-Colored.png" alt="">
             <img class="dark-logo" src="img/home/JORO-LOGO-FINAL-Gray.png" alt="">
         </a>
-        <div>
+        <div class="navbar-links">
+
           <ul class="navbar-lists">
             <li><a class="navbar-lists__links" href="about.html">About Us</a></li>
             <li><a class="navbar-lists__links" href="product.html">Our Products</a></li>
             <li><a class="navbar-lists__links" href="spport.html">Support</a></li>
-            <li><a class="navbar-lists__links news-nav" href="news.html">News</a>
-              <ul class="news-div">
-                <li><a class="navbar-lists__links" href="news.html">News 1</a></li>
-                <li><a class="navbar-lists__links" href="news.html">News 2</a></li>
-              </ul>
-            </li>
-            <li><a class="navbar-lists__links" href="contact.html">Contact Us</a></li>
-          </ul>
-        </div>
-    </div>
-
+            <li class="news"><a class="navbar-lists__links" href="news.html">News</a>
+              <ul>
+                <li><a class="navbar-lists__links" href="spport.html">Support</a></li>
+              <li><a class="navbar-lists__links" href="news.html">News</a></li>
+            </ul>
+          </li>
+          <li><a class="navbar-lists__links" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      </div>
+      
+      <a class="toggle-button">
+        <i class="fas fa-bars bar"></i>
+      </a>
 
 <!-- MAIN SECTION -->
 <main class="main-tag">
   <div class="home-main container">
     <div class="home-main__img">
       <div class="class-img">
-        <img src="img/home/Classroom-Older copy.png" alt="">
+        <img class="main-img" src="img/home/Classroom-Older copy.png" alt="">
         <img class="shape_img" src="img/home/mask-group10.svg" alt="">
       </div>
-      <div class="yellow-circle"></div>
-      <div class="grey-circle"></div>
+      <div class="shapes">
+        <div class="yellow-circle"></div>
+        <div class="grey-circle"></div>
+
+      </div>
     </div>
 
     <div class="home-main__text">
@@ -65,7 +72,8 @@
 
 <!-- OUR PRODUCTS SECTION -->
 <div class="bg-white">
-      <h3 class="product-header header-3 align-center">Our Products</h3> <!-- //This is needed somehow,ask about this -->
+      <h3 class="v-none product-header header-3 align-center">Our Products</h3> <!-- //This is needed somehow,ask about this -->
+      
       <div class="our-products container">
         <div class="our-products__card">
           <div class="our-products__card-top">
@@ -131,9 +139,8 @@
     </div>
     <a href="#" class="btn-grey">Learn More <i class="fas fa-arrow-right"></i></a>
   </div>
-
-  
 </div>
+
 <!-- FEATURES SECTION  -->
 <div class="features container">
   <div class="features-info">
@@ -201,7 +208,7 @@
   </div>
 </div>
 
-<footer class= "footer container">
+<footer class= "footer">
   <div class="footer-logo">
     <img src="img/home/JORO-LOGO-FINAL-Colored.png" alt="">
     <div class="footer-logo__socials">
@@ -211,7 +218,6 @@
       <img src="img/home/Icon simple-youtube.svg" alt="">
     </div>
   </div>
-
   <div class="footer-list">
     <a href="about.html" class="footer-list__anchor">About Joro</a>
     <a href="prolift.html" class="footer-list__anchor">ProLIFT</a>
@@ -220,7 +226,6 @@
     <a href="faq.html" class="footer-list__anchor">FAQ</a>
     <a href="#" class="footer-list__anchor">Blog</a>
   </div>
-
   <div class="footer-contact">
     <h6>Contact Info</h6>
     <div>
@@ -230,7 +235,6 @@
       <img src="img/home/Icon ionic-md-pin.svg" alt=""><p>48 East Lake Green NE, Airdrie, AB T4A 2J2, Canada</p>
     </div>
   </div>
-
   <div class="footer-form">
     <p>Enter your email to stay up to date on all Joro News</p>
     <div>
@@ -244,6 +248,7 @@
 
 
 
+<script src="toggle.js"></script>
 
 </body>
 </html>

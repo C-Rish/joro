@@ -14,37 +14,49 @@
 <body class="product-body" style="background-color: #89BBE0">
 
     <!-- NAVBAR SECTION -->
-      <div class="navbar">
-        <a class="navbar-logo" href="index.html">
+    <div class="navbar">
+      <a class="navbar-logo" href="index.html">
           <img class="light-logo" src="img/home/JORO-LOGO-FINAL-Colored.png" alt="">
           <img class="dark-logo" src="img/home/JORO-LOGO-FINAL-Gray.png" alt="">
       </a>
-      <div>
+      <div class="navbar-links">
+
         <ul class="navbar-lists">
           <li><a class="navbar-lists__links" href="about.html">About Us</a></li>
           <li><a class="navbar-lists__links" href="product.html">Our Products</a></li>
           <li><a class="navbar-lists__links" href="spport.html">Support</a></li>
-          <li><a class="navbar-lists__links" href="news.html">News</a></li>
-          <li><a class="navbar-lists__links" href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
+          <li class="news"><a class="navbar-lists__links" href="news.html">News</a>
+            <ul>
+              <li><a class="navbar-lists__links" href="spport.html">Support</a></li>
+            <li><a class="navbar-lists__links" href="news.html">News</a></li>
+          </ul>
+        </li>
+        <li><a class="navbar-lists__links" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
     </div>
 
-    <main class="product-main container">
-      <header style="background-color: #bfe9e7;">
-        <!--<img src="img/product/IntimateSetting copy.png" alt=""> -->
-      </header>
-      <div class="product-main__header">
-        <h2>FAQ</h2>
-        <p class="mb-2">If you have questions, we have answers.</p>
-        <p> Take a look at some of our most Frequently Asked Questions.</p>
+    <a class="toggle-button">
+      <i class="fas fa-bars bar"></i>
+    </a>
+
+    <!-- CSS IN news.scss -->
+    <main class="new-container container">
+      <div class="faq-header">
+
       </div>
-      <div class="product-main__image">
-        <img src="img/faq/Intersection 7.png" alt="">
-        <img class = "news-dotcircle" src="img/news/mask-group9.svg" alt="">
-        <img class="faq-shape" src="img/faq/Intersection 8.svg" alt="">
-      </div>
-    </main>
+        <div class="news-main">
+          <div class="news-main__info">
+            <h2>FAQ</h2>
+            <p>If you have questions, we have answers. Take a look at some of our most Frequently Asked Questions to help you out</p>
+          </div>
+          <div class="news-main__img">
+            <img class="main-img" src="img/faq/Intersection 7.png" alt="">
+            <img class="news-shape" src="img/news/Intersection 8.svg" alt="">
+            <img class="news-shape-circle" src="img/news/mask-group9.svg" alt="">
+          </div>
+        </div>
+     </main>
 
     <div class="faq">
       <div class="faq-menus">
@@ -123,5 +135,8 @@
       <p>Chat with Joro</p>
       <img src="img/home/Icon ionic-ios-chatbubbles.svg" alt="">
     </div>
+
+<script src="toggle.js"></script>
+
 </body>
 </html>

@@ -11,6 +11,10 @@
   gap: 4rem;
   background-color: $color-white;
   padding-right: 6rem;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
   &-menus {
     display: flex;
     flex-direction: column;
@@ -18,8 +22,9 @@
     flex: 0 0 30%;
     align-self: flex-start;
     padding-top: 4rem;
-
     background-color: $color-blue-light;
+    width: 100%;
+
     a {
       font-size: 3rem;
       color: $color-dark-blue;

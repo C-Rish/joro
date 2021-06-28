@@ -248,25 +248,25 @@ a {
     .navbar-lists .news {
       position: relative; }
       .navbar-lists .news ul {
-        display: none;
         position: absolute;
-        top: 2rem;
+        top: 3rem;
         left: 3rem;
         width: 14rem;
-        background-color: #bfe9e7; }
+        opacity: 0;
+        background-color: #ffffff; }
         .navbar-lists .news ul li {
-          z-index: 1000;
           list-style: none;
-          padding: 0;
+          padding: 0.5rem 0.5rem;
           text-decoration: none;
           font-size: 2rem;
           text-transform: uppercase;
           color: #3b4546;
           display: inline-block; }
-    .navbar-lists .news:hover ul {
-      display: block; }
+          .navbar-lists .news ul li:hover {
+            color: #bfe9e7; }
+      .navbar-lists .news:hover ul {
+        opacity: 1; }
   .navbar div:last-child {
-    overflow-y: hidden;
     border-bottom: 1px solid #ffffff;
     margin-right: 6.2rem; }
   @media (max-width: 550px) {

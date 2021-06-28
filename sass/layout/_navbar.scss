@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 12rem;
+  // height: 12rem;
   padding-top: 4rem;
   background-color: transparent;
   transition: all 0.5s;
@@ -84,23 +84,33 @@
       }
     }
 
-    ul {
-      position: absolute;
-      background-color: $color-white;
-      display: none;
-      // top: 3rem;
+    .news {
+      position: relative;
 
-      li {
-        list-style: none;
-        padding: 0.5rem 0;
-        background-color: inherit;
+      ul {
+        display: none;
+
+        position: absolute;
+
+        top: 2rem;
+        left: 3rem;
+        width: 14rem;
+        background-color: $color-blue-light;
+        li {
+          z-index: 1000;
+          list-style: none;
+          padding: 0;
+          text-decoration: none;
+          font-size: 2rem;
+          text-transform: uppercase;
+          color: $color-grey;
+          display: inline-block;
+          // height: 4rem;
+        }
       }
     }
 
-    .news:hover ul,
-    .news:hover {
-      position: relative;
-      height: 8rem;
+    .news:hover ul {
       display: block;
     }
   } // End of navbar-lists

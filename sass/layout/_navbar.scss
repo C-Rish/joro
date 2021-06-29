@@ -2,11 +2,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // height: 12rem;
+  height: 12rem;
   padding-top: 4rem;
   background-color: transparent;
   transition: all 0.5s;
-  z-index: 100;
   a {
     display: block;
   }
@@ -89,11 +88,13 @@
 
       ul {
         position: absolute;
-        top: 3rem;
+        top: 2rem;
         left: 3rem;
         width: 14rem;
-        opacity: 0;
+        display: none;
         background-color: $color-white;
+        padding: 1rem 0;
+        z-index: 100;
         li {
           list-style: none;
           padding: 0.5rem 0.5rem;
@@ -111,7 +112,7 @@
       }
 
       &:hover ul {
-        opacity: 1;
+        display: block;
       }
     }
   } // End of navbar-lists
@@ -133,6 +134,7 @@
   right: 4rem;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 100;
 
   .bar {
     height: 5px;

@@ -188,10 +188,10 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 12rem;
   padding-top: 4rem;
   background-color: transparent;
-  transition: all 0.5s;
-  z-index: 100; }
+  transition: all 0.5s; }
   .navbar a {
     display: block; }
   .navbar:hover {
@@ -249,11 +249,13 @@ a {
       position: relative; }
       .navbar-lists .news ul {
         position: absolute;
-        top: 3rem;
+        top: 2rem;
         left: 3rem;
         width: 14rem;
-        opacity: 0;
-        background-color: #ffffff; }
+        display: none;
+        background-color: #ffffff;
+        padding: 1rem 0;
+        z-index: 100; }
         .navbar-lists .news ul li {
           list-style: none;
           padding: 0.5rem 0.5rem;
@@ -265,7 +267,7 @@ a {
           .navbar-lists .news ul li:hover {
             color: #bfe9e7; }
       .navbar-lists .news:hover ul {
-        opacity: 1; }
+        display: block; }
   .navbar div:last-child {
     border-bottom: 1px solid #ffffff;
     margin-right: 6.2rem; }
@@ -279,7 +281,8 @@ a {
   top: 4rem;
   right: 4rem;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  z-index: 100; }
   .toggle-button .bar {
     height: 5px;
     width: 100%;
@@ -555,7 +558,7 @@ body {
 
 .our-products {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2rem;
   margin-top: -20rem; }
   @media (max-width: 750px) {
@@ -1802,9 +1805,11 @@ body {
         .new-container .news-main__info h2 {
           font-size: 7rem; } }
     .new-container .news-main__img {
-      align-self: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: relative;
-      width: 100%;
+      width: 80%;
       height: 100%; }
       .new-container .news-main__img .main-img {
         width: 100%;
@@ -1951,7 +1956,7 @@ body {
     -ms-text-kashida-space: 52rem;
     border-radius: 1rem;
     padding: 4rem 2rem;
-    overflow-y: scroll; }
+    overflow-y: scroll !important; }
     .map-card__nation {
       display: flex;
       border-bottom: 3px solid #89bbe0;
@@ -1960,7 +1965,7 @@ body {
         font-size: 2rem;
         padding: 1rem 7.5rem;
         width: 100 .map-card__nation a; }
-      .map-card__nation .active {
+      .map-card__nation .actives {
         background-color: #89bbe0;
         color: #ffffff; }
     @media (max-width: 600px) {

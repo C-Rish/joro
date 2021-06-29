@@ -116,13 +116,20 @@
   position: relative;
 
   &-left {
+    grid-area: left;
+    grid-area: left;
     margin-top: 15rem;
     margin-bottom: -10rem;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
+    z-index: 2;
+    height: 200%;
+    width: 200%;
+    img {
+      max-width: 100%;
+    }
   }
   &-middle {
+    grid-area: middle;
+
     h3 {
       margin-left: -28rem;
       padding: 0 10rem;
@@ -134,15 +141,44 @@
     }
   }
   &-right {
+    grid-area: right;
+
     margin-top: -22rem;
     margin-right: 6rem;
     z-index: 2;
+    height: 200%;
+    width: 200%;
+    img {
+      max-width: 100%;
+    }
   }
   &-shape {
     position: absolute;
     top: 15rem;
     right: 0;
     z-index: 1;
+  }
+
+  @media (max-width: 950px) {
+    display: grid;
+    grid-template-areas:
+      "left"
+      "middle"
+      "right";
+
+    &-left {
+      margin: 0;
+    }
+    &-middle {
+      h3 {
+        margin: 0 auto;
+      }
+    }
+    &-right {
+      grid-area: right;
+      margin: 0;
+      align-items: center;
+    }
   }
 }
 

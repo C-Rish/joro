@@ -57,7 +57,9 @@
     -ms-text-kashida-space: 52rem;
     border-radius: 1rem;
     padding: 4rem 2rem;
-    overflow-y: scroll;
+    overflow-y: scroll !important;
+    // .seller {
+    // }
     &__nation {
       display: flex;
       border-bottom: 3px solid $color-dark-blue;
@@ -67,9 +69,14 @@
         padding: 1rem 7.5rem;
         width: 100&;
       }
-      .active {
+      .actives {
         background-color: $color-dark-blue;
         color: $color-white;
+      }
+
+      .sellers-usa,
+      .sellers-canada {
+        display: block;
       }
     }
 

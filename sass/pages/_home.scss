@@ -220,7 +220,7 @@ body {
 
 .our-products {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2rem;
   margin-top: -20rem;
 
@@ -475,14 +475,9 @@ body {
 
   &-quotes {
     display: flex;
-    justify-content: space-around;
-    text-align: center;
-    gap: 1rem;
-
-    @media (max-width: 630px) {
-      flex-direction: column;
-      align-items: center;
-    }
+    justify-content: center;
+    // text-align: center;
+    gap: 6rem;
 
     .main-text {
       font-style: italic;
@@ -491,7 +486,7 @@ body {
     }
 
     &__item {
-      flex: 1 1 40%;
+      flex: 1 1 60%;
       background-color: $color-green-light;
       max-width: 48rem;
       min-width: 30rem;

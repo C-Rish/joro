@@ -73,6 +73,11 @@
         background-color: $color-dark-blue;
         color: $color-white;
       }
+
+      .sellers-usa,
+      .sellers-canada {
+        display: block;
+      }
     }
 
     @media (max-width: 600px) {

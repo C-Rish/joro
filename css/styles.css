@@ -732,18 +732,13 @@ body {
     margin-bottom: 5rem; }
   .testimonials-quotes {
     display: flex;
-    justify-content: space-around;
-    text-align: center;
-    gap: 1rem; }
-    @media (max-width: 630px) {
-      .testimonials-quotes {
-        flex-direction: column;
-        align-items: center; } }
+    justify-content: center;
+    gap: 6rem; }
     .testimonials-quotes .main-text {
       font-style: italic;
       margin: 2.1rem 0; }
     .testimonials-quotes__item {
-      flex: 1 1 40%;
+      flex: 1 1 60%;
       background-color: #ebf8f7;
       max-width: 48rem;
       min-width: 30rem;
@@ -1968,6 +1963,9 @@ body {
       .map-card__nation .actives {
         background-color: #89bbe0;
         color: #ffffff; }
+      .map-card__nation .sellers-usa,
+      .map-card__nation .sellers-canada {
+        display: block; }
     @media (max-width: 600px) {
       .map-card {
         top: 0rem;
